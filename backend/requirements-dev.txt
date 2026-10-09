@@ -1,0 +1,4 @@
+# Test-only dependencies: pytest tests/test_features.py
+pytest
+httpx
+mongomock-motor

@@ -1,0 +1,9 @@
+.pg-badge { --pg-color: #00c853; margin: 6px 0; font: 13px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif; max-width: 560px; }
+.pg-badge .pg-head { all: unset; cursor: pointer; display: inline-block; padding: 4px 10px; border-radius: 999px;
+  color: var(--pg-color); background: color-mix(in srgb, var(--pg-color) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--pg-color) 45%, transparent); font-weight: 600; }
+.pg-badge .pg-details { margin-top: 6px; padding: 10px 12px; border-radius: 10px; background: #0a0f1c; color: #e4e4e7;
+  border: 1px solid rgba(255,255,255,0.12); display: grid; gap: 4px; }
+.pg-badge .pg-details[hidden] { display: none; }
+.pg-badge .pg-report { all: unset; cursor: pointer; margin-top: 4px; width: fit-content; padding: 4px 10px; border-radius: 8px;
+  background: #ff2a2a; color: #fff; font-weight: 600; }

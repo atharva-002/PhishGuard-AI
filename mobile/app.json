@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "PhishGuard",
+    "slug": "phishguard",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#05050A",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "ai.phishguard.app"
+    },
+    "android": {
+      "package": "ai.phishguard.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#05050A"
+      }
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ]
+    ]
+  }
+}

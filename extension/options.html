@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>PhishGuard settings</title>
+  <style>
+    :root { color-scheme: dark; }
+    body { max-width: 560px; margin: 40px auto; padding: 0 16px; background: #05050a; color: #fff; font: 14px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+    h1 { font-size: 22px; } label { display: block; margin: 16px 0 6px; color: #a1a1aa; }
+    input[type=text] { width: 100%; box-sizing: border-box; padding: 9px 12px; border-radius: 10px; border: 1px solid rgba(255,255,255,.15); background: #0a0f1c; color: #fff; }
+    .check { display: flex; gap: 8px; align-items: center; color: #fff; }
+    button { margin-top: 20px; padding: 9px 16px; border: 0; border-radius: 10px; background: #00e5ff; color: #001018; font-weight: 700; cursor: pointer; }
+    #msg { margin-left: 12px; color: #00ff66; } .hint { color: #71717a; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <h1>PhishGuard settings</h1>
+  <label for="server">PhishGuard server URL</label>
+  <input id="server" type="text" placeholder="http://localhost:8000" />
+  <div class="hint">Your FastAPI backend. Use your PC's address (e.g. http://192.168.0.105:8000) if the backend runs on another machine.</div>
+  <label for="dashboard">Dashboard URL</label>
+  <input id="dashboard" type="text" placeholder="http://localhost:3000" />
+  <label>Scanning</label>
+  <div class="check"><input id="autoScan" type="checkbox" /> <span>Scan messages automatically on Gmail, Outlook, Messages and WhatsApp Web</span></div>
+  <div class="check"><input id="showSafe" type="checkbox" /> <span>Also show a badge on messages that look safe</span></div>
+  <div class="check"><input id="offline" type="checkbox" /> <span>Offline only: never send text to the server (uses the on-device model)</span></div>
+  <button id="save">Save</button><span id="msg"></span>
+  <script src="options.js"></script>
+</body>
+</html>

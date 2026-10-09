@@ -1,0 +1,278 @@
+{
+  "logistic_regression": {
+    "name": "Logistic Regression",
+    "accuracy": 0.9898200757575758,
+    "precision": 0.9779411764705882,
+    "recall": 0.9449378330373002,
+    "f1": 0.9611562782294489,
+    "confusion_matrix": [
+      [
+        3649,
+        12
+      ],
+      [
+        31,
+        532
+      ]
+    ],
+    "labels": [
+      "ham",
+      "spam"
+    ],
+    "report": {
+      "ham": {
+        "precision": 0.9915760869565218,
+        "recall": 0.9967222070472549,
+        "f1-score": 0.9941424873995368,
+        "support": 3661.0
+      },
+      "spam": {
+        "precision": 0.9779411764705882,
+        "recall": 0.9449378330373002,
+        "f1-score": 0.9611562782294489,
+        "support": 563.0
+      },
+      "accuracy": 0.9898200757575758,
+      "macro avg": {
+        "precision": 0.984758631713555,
+        "recall": 0.9708300200422775,
+        "f1-score": 0.9776493828144929,
+        "support": 4224.0
+      },
+      "weighted avg": {
+        "precision": 0.9897587444840833,
+        "recall": 0.9898200757575758,
+        "f1-score": 0.9897458880238836,
+        "support": 4224.0
+      }
+    }
+  },
+  "naive_bayes": {
+    "name": "Naive Bayes",
+    "accuracy": 0.9846117424242424,
+    "precision": 0.947841726618705,
+    "recall": 0.9360568383658969,
+    "f1": 0.9419124218051832,
+    "confusion_matrix": [
+      [
+        3632,
+        29
+      ],
+      [
+        36,
+        527
+      ]
+    ],
+    "labels": [
+      "ham",
+      "spam"
+    ],
+    "report": {
+      "ham": {
+        "precision": 0.990185387131952,
+        "recall": 0.9920786670308659,
+        "f1-score": 0.9911311229362806,
+        "support": 3661.0
+      },
+      "spam": {
+        "precision": 0.947841726618705,
+        "recall": 0.9360568383658969,
+        "f1-score": 0.9419124218051832,
+        "support": 563.0
+      },
+      "accuracy": 0.9846117424242424,
+      "macro avg": {
+        "precision": 0.9690135568753285,
+        "recall": 0.9640677526983814,
+        "f1-score": 0.9665217723707319,
+        "support": 4224.0
+      },
+      "weighted avg": {
+        "precision": 0.9845415706383541,
+        "recall": 0.9846117424242424,
+        "f1-score": 0.9845709598830592,
+        "support": 4224.0
+      }
+    }
+  },
+  "svm": {
+    "name": "SVM (Linear)",
+    "accuracy": 0.9910037878787878,
+    "precision": 0.9852125693160814,
+    "recall": 0.9467140319715808,
+    "f1": 0.9655797101449275,
+    "confusion_matrix": [
+      [
+        3653,
+        8
+      ],
+      [
+        30,
+        533
+      ]
+    ],
+    "labels": [
+      "ham",
+      "spam"
+    ],
+    "report": {
+      "ham": {
+        "precision": 0.9918544664675536,
+        "recall": 0.9978148046981699,
+        "f1-score": 0.9948257080610022,
+        "support": 3661.0
+      },
+      "spam": {
+        "precision": 0.9852125693160814,
+        "recall": 0.9467140319715808,
+        "f1-score": 0.9655797101449275,
+        "support": 563.0
+      },
+      "accuracy": 0.9910037878787878,
+      "macro avg": {
+        "precision": 0.9885335178918175,
+        "recall": 0.9722644183348753,
+        "f1-score": 0.9802027091029648,
+        "support": 4224.0
+      },
+      "weighted avg": {
+        "precision": 0.9909691946644572,
+        "recall": 0.9910037878787878,
+        "f1-score": 0.9909276264258814,
+        "support": 4224.0
+      }
+    }
+  },
+  "best_model": "svm",
+  "feature_importance": [
+    {
+      "feature": "__phone__",
+      "weight": 8.164665372391799
+    },
+    {
+      "feature": "__url__",
+      "weight": 6.2301573100526895
+    },
+    {
+      "feature": "txt",
+      "weight": 4.842826537753756
+    },
+    {
+      "feature": "18",
+      "weight": 3.7656528954176642
+    },
+    {
+      "feature": "\u0906\u092a\u0915",
+      "weight": 3.6460824665425053
+    },
+    {
+      "feature": "\u091c\u0935",
+      "weight": 3.454108952858258
+    },
+    {
+      "feature": "uk",
+      "weight": 3.3746459654831367
+    },
+    {
+      "feature": "84484",
+      "weight": 3.374467058677831
+    },
+    {
+      "feature": "text",
+      "weight": 3.305790924307232
+    },
+    {
+      "feature": "erreur",
+      "weight": 3.153979077011036
+    },
+    {
+      "feature": "win",
+      "weight": 3.1291124364888208
+    },
+    {
+      "feature": "\u0905\u091a\u091b \u0932\u0924",
+      "weight": 3.1176980913860346
+    },
+    {
+      "feature": "error",
+      "weight": 3.1090107534823037
+    },
+    {
+      "feature": "arsenal",
+      "weight": 2.9729947662764618
+    },
+    {
+      "feature": "__money__",
+      "weight": 2.943473045739729
+    },
+    {
+      "feature": "xmmas",
+      "weight": 2.889289337474622
+    },
+    {
+      "feature": "150p",
+      "weight": 2.8508728271868033
+    },
+    {
+      "feature": "service",
+      "weight": 2.7823557305589293
+    },
+    {
+      "feature": "januar",
+      "weight": 2.730295792712249
+    },
+    {
+      "feature": "mobile",
+      "weight": 2.715248510555028
+    }
+  ],
+  "dataset": {
+    "total_rows": 21116,
+    "spam": 2815,
+    "ham": 18301,
+    "languages": {
+      "en": 5639,
+      "hindi": 5090,
+      "french": 5065,
+      "german": 5064,
+      "english": 175,
+      "hi": 8,
+      "ml": 8,
+      "nl": 7,
+      "no": 6,
+      "kn": 5,
+      "kha": 4,
+      "ta": 4,
+      "ro": 4,
+      "ru": 3,
+      "bn": 3,
+      "es": 3,
+      "te": 3,
+      "ar": 2,
+      "pt": 2,
+      "zh": 2
+    }
+  },
+  "on_device": {
+    "name": "On-device (char n-gram LR)",
+    "accuracy": 0.9891098484848485,
+    "precision": 0.9657657657657658,
+    "recall": 0.9520426287744227,
+    "f1": 0.9588550983899821,
+    "confusion_matrix": [
+      [
+        3642,
+        19
+      ],
+      [
+        27,
+        536
+      ]
+    ],
+    "labels": [
+      "ham",
+      "spam"
+    ],
+    "features": 30000
+  }
+}

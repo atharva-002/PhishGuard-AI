@@ -1,0 +1,8 @@
+# Optional: fine-tune / serve XLM-RoBERTa or IndicBERT
+# pip install -r requirements-transformer.txt
+# (On Windows without a GPU, install the CPU build of torch first:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu)
+torch>=2.2
+transformers>=4.46
+accelerate>=0.34
+sentencepiece>=0.2

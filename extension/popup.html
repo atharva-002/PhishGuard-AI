@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>PhishGuard</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <img src="icons/icon32.png" alt="" width="22" height="22" />
+    <strong>PhishGuard.AI</strong>
+    <span id="status" class="status" title="Server status">checking…</span>
+  </header>
+  <textarea id="text" rows="6" placeholder="Paste an SMS, e-mail or WhatsApp message (any of 7 languages)…"></textarea>
+  <div class="row">
+    <button id="selection" class="ghost">Use selected text</button>
+    <button id="scan" class="primary">Scan</button>
+  </div>
+  <section id="result" hidden>
+    <div id="verdict" class="verdict"></div>
+    <div id="meta" class="meta"></div>
+    <div id="signals" class="signals"></div>
+    <div id="advice" class="advice"></div>
+    <button id="report" class="danger" hidden>Report to Threat Hub</button>
+  </section>
+  <footer>
+    <a href="#" id="options">Settings</a>
+    <a href="#" id="dashboard">Open dashboard</a>
+  </footer>
+  <script src="popup.js"></script>
+</body>
+</html>

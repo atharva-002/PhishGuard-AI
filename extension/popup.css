@@ -1,0 +1,22 @@
+:root { color-scheme: dark; }
+body { width: 340px; margin: 0; padding: 12px; background: #05050a; color: #fff; font: 13px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+.status { margin-left: auto; font: 11px ui-monospace, monospace; color: #a1a1aa; }
+.status.ok { color: #00ff66; } .status.off { color: #ffb000; }
+textarea { width: 100%; box-sizing: border-box; resize: vertical; background: #0a0f1c; color: #fff; border: 1px solid rgba(255,255,255,.12);
+  border-radius: 10px; padding: 8px; font: 12px ui-monospace, monospace; }
+textarea:focus { outline: none; border-color: #00e5ff; }
+.row { display: flex; gap: 8px; margin-top: 8px; }
+button { border: 0; border-radius: 8px; padding: 7px 12px; font-weight: 600; cursor: pointer; }
+.primary { margin-left: auto; background: #00e5ff; color: #001018; }
+.ghost { background: transparent; color: #a1a1aa; border: 1px solid rgba(255,255,255,.15); }
+.danger { background: #ff2a2a; color: #fff; margin-top: 8px; }
+button:disabled { opacity: .6; cursor: default; }
+#result { margin-top: 12px; padding: 12px; border-radius: 12px; background: #0a0f1c; border: 1px solid rgba(255,255,255,.1); }
+.verdict { font-size: 16px; font-weight: 700; }
+.meta { color: #71717a; font: 11px ui-monospace, monospace; margin-top: 2px; }
+.signals { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+.signals span { font: 11px ui-monospace, monospace; padding: 2px 6px; border-radius: 6px; color: #ffb000; background: rgba(255,176,0,.1); border: 1px solid rgba(255,176,0,.3); }
+.advice { color: #a1a1aa; margin-top: 8px; }
+footer { display: flex; justify-content: space-between; margin-top: 12px; }
+footer a { color: #a1a1aa; text-decoration: none; } footer a:hover { color: #00e5ff; }
